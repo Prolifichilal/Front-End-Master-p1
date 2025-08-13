@@ -20,6 +20,9 @@
                 <li><a href="#about-section">About</a></li>
                 <li><a href="#contact-section">Contact</a></li>
             </ul>
+            <div class="menu-toggle" id="menu-toggle">
+            ☰
+        </div>
         </div>
     </section>
     <section id="home-section">
@@ -148,6 +151,10 @@
     <span class="div-ctn-close">×</span>
 </div>
 
+<div class="top-button">
+    <button id="top-button-btn">↑</button>
+</div>
+
 
 <script>
     let closeButton = document.querySelector('.div-ctn-close');
@@ -161,6 +168,26 @@
         document.getElementById('contact-section').scrollIntoView({behavior: 'smooth'
     });
     });
+
+    const topbtn = document.getElementById('top-button-btn');
+
+   window.addEventListener('scroll', () => {
+  topbtn.style.display = window.scrollY > 200 ? 'block' : 'none';
+});
+
+topbtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+
+const menuToggle = document.getElementById("menu-toggle");
+const navLink = document.querySelector('.nav-navlist-div ul');
+
+menuToggle.addEventListener("click", () => {
+    navLink.classList.toggle("active");
+});
+
+
 </script>
 </body>
 </html>

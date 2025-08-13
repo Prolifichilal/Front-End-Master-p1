@@ -547,3 +547,63 @@ body{
 .div-ctn-close:hover{
     font-size: 23px;
 }
+
+.top-button button{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    transition: font-size 0.3s ease;
+}
+
+.top-button button:hover{
+    font-size: 20px;
+}
+
+.menu-toggle{
+    display: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+@media (max-width: 390px){
+    #navigation-bar{
+        width: 100%;
+    }
+
+    .nav-navlist-div ul{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 180px;
+        top: 42px;
+        text-align: right;
+        background-color: rgb(175, 246, 222);
+        padding: 20px;
+        line-height: 13px;
+    }
+
+     .nav-navlist-div ul.active {
+        display: flex;
+    }
+
+    .nav-navlist-div ul a{
+        color: rgb(19, 87, 65);
+    }
+
+    .menu-toggle{
+        display: block;
+        position: absolute;
+        right: 180px;
+        top: 16px;
+        color: white;
+        font-size: 28px;
+    }
+}
