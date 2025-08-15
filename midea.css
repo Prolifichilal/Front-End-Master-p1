@@ -1,0 +1,144 @@
+@media(max-width:850px){
+    
+    body{
+        width: 850px;
+    }
+
+    #navigation-bar{
+        padding: 0;
+    }
+
+    
+
+    .nav-navlist-div ul{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 40px;
+        top: 42px;
+        text-align: right;
+        background-color: rgb(175, 246, 222);
+        padding: 20px;
+        line-height: 13px;
+    }
+
+     .nav-navlist-div ul.active {
+        display: flex;
+    }
+
+    .nav-navlist-div ul a{
+        color: rgb(19, 87, 65);
+    }
+
+    .menu-toggle{
+        display: block;
+        right: 40px;
+        top: 23px;
+    }
+
+    .div-ctn{
+        height: 50px;
+        width: 280px;
+        gap: 15px;
+    }
+
+    .div-ctn span{
+        font-size: 12px;
+    }
+
+    .div-ctn button{
+        padding: 2px 9px;
+    }
+
+    
+}
+
+
+@media(max-width:400px){
+    
+    body{
+        width: 400px;
+    }
+
+    #navigation-bar{
+        padding: 0;
+    }
+
+    .home-title-content h1{    
+        font-size: 70px;
+        font-weight: 700;
+    }
+
+    .home-title-content p{
+        font-size: 12px;
+    }
+
+    .skillset-png{
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 15px 40px;
+    }
+
+    .about-description{
+        padding: 40px;
+    }
+ 
+    .about-description p{
+        display: flex;
+        font-size: 12px;
+    }   
+
+    .nav-navlist-div ul{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        right: 40px;
+        top: 42px;
+        text-align: right;
+        background-color: rgb(175, 246, 222);
+        padding: 20px;
+        line-height: 13px;
+    }
+
+     .nav-navlist-div ul.active {
+        display: flex;
+    }
+
+    .nav-navlist-div ul a{
+        color: rgb(19, 87, 65);
+    }
+
+    .menu-toggle{
+        display: block;
+        right: 40px;
+        top: 23px;
+    }
+
+    .contact-container{
+        width: 200px;
+        height: 300px;
+        line-height: 16px;
+        padding: 17px;
+    }
+
+    .contact-container form h2{
+        font-size: 23px;
+        font-weight: 800;
+    }
+
+    .div-ctn{
+        height: 50px;
+        width: 280px;
+        gap: 15px;
+    }
+
+    .div-ctn span{
+        font-size: 12px;
+    }
+
+    .div-ctn button{
+        padding: 2px 9px;
+    }
+
+    
+}

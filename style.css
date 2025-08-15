@@ -1,5 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 html{
     scroll-behavior: smooth;
+     overflow-x: hidden;
 }
 
 body{
@@ -7,18 +12,22 @@ body{
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(22, 125, 92);
+     overflow-x: hidden;
 }
 
 #navigation-bar{
+    margin: 0;
     position: fixed;
     background-color: rgb(13, 177, 125);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     height: 60px;
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1;
 
@@ -27,10 +36,16 @@ body{
 .nav-logo-div{
     padding: 20px;
     font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-logo-div a{
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-logo-div span{
@@ -68,6 +83,7 @@ body{
     background-color: rgb(22, 125, 92);
     height: calc(100vh);
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -156,6 +172,7 @@ body{
 .skill-main-container{
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -185,6 +202,7 @@ body{
     padding: 25px 50px;
     border-radius: 20px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -209,6 +227,7 @@ body{
 
 #portfolio-section{
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     align-items: center;
     justify-content: center;
@@ -219,6 +238,7 @@ body{
 .portfolio-main{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 30px;
     align-items: center;
@@ -229,6 +249,7 @@ body{
 .portfolio-content{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     align-items: center;
     justify-content: center;
@@ -357,6 +378,7 @@ body{
     color: white;
     margin: 0;
     padding: 0;
+    padding: 20px;
 }
 
 .about-description h2{
@@ -368,6 +390,7 @@ body{
 .about-description p{
     text-align: center;
     margin: 0;
+    line-height: 16px;
 }
 
 
@@ -387,6 +410,7 @@ body{
 
 .education-containers{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     align-items: center;
     justify-content: center;
@@ -566,6 +590,9 @@ body{
 .menu-toggle{
     display: none;
     cursor: pointer;
+    height: 20px;
+    width: 20px;
+    position: absolute;
 }
 
 
@@ -573,37 +600,5 @@ body{
 
 
 
-@media (max-width: 390px){
-    #navigation-bar{
-        width: 100%;
-    }
+    
 
-    .nav-navlist-div ul{
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        right: 180px;
-        top: 42px;
-        text-align: right;
-        background-color: rgb(175, 246, 222);
-        padding: 20px;
-        line-height: 13px;
-    }
-
-     .nav-navlist-div ul.active {
-        display: flex;
-    }
-
-    .nav-navlist-div ul a{
-        color: rgb(19, 87, 65);
-    }
-
-    .menu-toggle{
-        display: block;
-        position: absolute;
-        right: 180px;
-        top: 16px;
-        color: white;
-        font-size: 28px;
-    }
-}
